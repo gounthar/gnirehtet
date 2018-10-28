@@ -9,5 +9,5 @@ build:
  ci:
  - wget https://sh.rustup.rs -O rustup-init
  - sh rustup-init -y
- - $HOME/.cargo/env
+ - chmod +x $HOME/.cargo/env && $HOME/.cargo/env
  - ./gradlew build
