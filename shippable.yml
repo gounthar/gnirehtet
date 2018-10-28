@@ -8,5 +8,5 @@ runtime:
 build:
  ci:
  - wget https://sh.rustup.rs -O rustup-init
- - sh rustup-init
+ - sh rustup-init -y
  - ./configure && make && make install
