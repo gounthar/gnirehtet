@@ -12,6 +12,7 @@ build:
  - chmod +x $HOME/.cargo/env && $HOME/.cargo/env
  - sudo add-apt-repository ppa:openjdk-r/ppa
  - sudo add-apt-repository universe
+ - sudo printf "deb http:// artful main universe" >> /etc/apt/sources.list
  - sudo apt-get update
  - sudo apt-get remove openjdk-10-jre openjdk-10-jdk
  - sudo apt-get install -y openjdk-8-jre android-sdk-platform-tools android-sdk-build-tools
