@@ -10,7 +10,7 @@ build:
     image_name: arm64v8/ubuntu
     image_tag: latest
     
- ci:
+  ci:
  - wget https://sh.rustup.rs -O rustup-init
  - sh rustup-init -y
  - chmod +x $HOME/.cargo/env && $HOME/.cargo/env
