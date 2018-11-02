@@ -19,7 +19,7 @@ build:
    - sudo apt-get update
 #   - sudo apt-get remove openjdk-10-jre openjdk-10-jdk
    - sudo apt-get install -y openjdk-8-jre wget android-sdk-platform-tools android-sdk-build-tools
-   - which adb
+   - export ANDROID_HOME=/usr/lib/android-sdk
    - wget https://sh.rustup.rs -O rustup-init
    - sh rustup-init -y
    - chmod +x $HOME/.cargo/env && $HOME/.cargo/env
