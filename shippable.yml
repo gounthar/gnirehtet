@@ -12,7 +12,7 @@ build:
     
   ci:
 #   - lsb_release -a
-   - sudo apt-get update
+   - sudo apt-get update && sudo apt-get install -y software-properties-common
    - sudo add-apt-repository ppa:openjdk-r/ppa
    - sudo add-apt-repository universe
    - sudo printf "deb http:// artful main universe" >> /etc/apt/sources.list
