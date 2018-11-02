@@ -11,7 +11,7 @@ build:
     image_tag: latest
     
   ci:
-   - lsb_release -a
+#   - lsb_release -a
    - sudo apt-get update
    - sudo add-apt-repository ppa:openjdk-r/ppa
    - sudo add-apt-repository universe
