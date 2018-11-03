@@ -15,5 +15,5 @@ build:
    - chmod +x $HOME/.cargo/env && $HOME/.cargo/env
    #- ls /usr/lib/android-sdk/build-tools/26.0.2/*
   # - find / -name sdkmanager
-   - yes | /usr/lib/android-sdk/tools/bin/sdkmanager "platforms;android-26"
+   - yes | /usr/lib/android-sdk/tools/bin/sdkmanager "platforms;android-26" "build-tools;26.0.2"
    - ./gradlew build
