@@ -13,5 +13,5 @@ build:
   ci:
 #   running on bionic - lsb_release -a
    - chmod +x $HOME/.cargo/env && $HOME/.cargo/env
-   - yes | sdkmanager "platforms;android-26"
+   - yes | /usr/lib/android-sdk/tools/bin/sdkmanager "platforms;android-26"
    - ./gradlew build
