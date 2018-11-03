@@ -16,6 +16,7 @@ build:
    #- ls /usr/lib/android-sdk/build-tools/26.0.2/*
   # - find / -name sdkmanager
    #- file /usr/lib/android-sdk/build-tools/26.0.2/aapt2
-   - sudo find / -name aapt2
+   #- sudo find / -name aapt2
    - yes | /usr/lib/android-sdk/tools/bin/sdkmanager "platforms;android-26" "build-tools;26.0.2"
+   - /usr/lib/android-sdk/build-tools/26.0.2/aapt2
    - ./gradlew build
