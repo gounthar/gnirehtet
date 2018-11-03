@@ -11,6 +11,6 @@ build:
     image_tag: latest
     
   ci:
-#   - lsb_release -a
+#   running on bionic - lsb_release -a
    - chmod +x $HOME/.cargo/env && $HOME/.cargo/env
    - ./gradlew build
